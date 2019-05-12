@@ -18,15 +18,15 @@ Communication protocol is described in emo_nano.ino file.
 
 2. Any ESP8266, ESP01 is enough.
 
-<b>Note.</b> Implementation is possible with only one controller, for example, ESP-12. But in this case voltage should be around 4V that is high end of ESP8266. With 3.3V Sunfounder Emo work is not stable.
+<i>Implementation is possible with only one controller, for example, ESP-12. But in this case voltage should be around 4V that is high end of ESP8266. With 3.3V Sunfounder Emo work is not stable.</i>
 
-3. SunFounder 24x8 LED Dot Matrix Module-Emo.
+3. SunFounder 24x8 LED Dot Matrix Module - Emo.
 
-<b>Note.</b> Instead of Sunfounder Emo, any LED matrix or time display like TM1637 can be used. In that case controller code should be changed.
+<i>Instead of Sunfounder Emo, any LED matrix or time display like TM1637 can be used. In that case controller code should be changed.</i>
 
-4. Optional. Brightness controller that changes LED brightness voltage from low value to high value and takes digital value as input. PWM brightness change seems to be impossible for Sunfounder Emo board. That's why code allows to set it only to 2 discrete values.
+<i>ESP8266 current consumption is completely unstable, so check for proper power supply and wires. Spikes during packets interchange each second might cause nasty LED blinking.</i>
 
-<b>Note.</b> ESP8266 current consumption is completely unstable, so check for proper power supply and wires. Spikes during packets interchange each second might cause nasty LED blinking.
+4. Optional. Brightness controller scheme. PWM brightness change seems to be impossible for Sunfounder Emo board. That's why code allows to set it only to 2 discrete values.
 
 <h2>Schematics</h2>
 
