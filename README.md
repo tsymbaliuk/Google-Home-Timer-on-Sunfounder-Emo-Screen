@@ -18,24 +18,24 @@ Communication protocol is described in emo_nano.ino file.
 
 2. Any ESP8266, ESP01 is enough.
 
-3. Optional. Brightness controller that changes LED brightness voltage from low value to high value and takes digital value as input.
+<b>Note.</b> Implementation is possible with only one controller, for example, ESP-12. But in this case voltage should be around 4V that is high end of ESP8266. With 3.3V Sunfounder Emo work is not stable.
+
+3. SunFounder 24x8 LED Dot Matrix Module-Emo.
+
+<b>Note.</b> Instead of Sunfounder Emo, any LED matrix or time display like TM1637 can be used. In that case controller code should be changed.
+
+4. Optional. Brightness controller that changes LED brightness voltage from low value to high value and takes digital value as input. PWM brightness change seems to be impossible for Sunfounder Emo board. That's why code allows to set it only to 2 discrete values.
+
+<b>Note.</b> ESP8266 current consumption is completely unstable, so check for proper power supply and wires. Spikes during packets interchange each second might cause nasty LED blinking.
 
 <h2>Schematics</h2>
 
-<h2>Limitations and ways to improve</h2>
+<h2>Limitations and known issues</h2>
 
 * Daylight saving time (DST) is not supported yet.
-
-* Implementation is possible with only one controller, for example, ESP-12. But in this case voltage should be around 4V that is high end of ESP8266. With 3.3V Sunfounder Emo work is not stable.
-
-* PWM brightness change seems to be impossible for Sunfounder Emo board. That's why code allows to set it only to 2 discrete values.
-
-* ESP8266 current consumption is completely unstable, so check for proper power supply and wires. Spikes during packets interchange each second might cause nasty LED blinking.
 
 * In rear cases Google Home do not respond to ESP8266 with proper list of timers. In that case clock would be shown for 1-2 seconds until proper answer would be received and timer would be shown again.
 
 * Max timer time is 99 minutes 59 seconds, max timeout (time after timer fired but wasn't dismissed on Google Home device) is 9 minutes 59 seconds.
-
-* Instead of Sunfounder Emo, any LED matrix or time display like TM1637 can be used. In that case controller code should be changed.
 
 * Fails during NTP syncronization are not handled.
