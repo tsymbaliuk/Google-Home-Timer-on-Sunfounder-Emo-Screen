@@ -8,7 +8,7 @@ Shows timers from any number of Google Home devices on <a href=https://www.amazo
 
 <b>emo_nano</b> is software for Arduino Nano or similar. It acts as a controller of screen and contains pixel font.
 
-<b>google_home_timer</b> is software for ESP8266. It sync time with NTP server (declared in NTPClient.h) and poll one or several Google Home devices through unofficial API. Once timer detected, default view of time would change to timer mode, timer progress would be shown at the bottom line.
+<b>google_home_timer</b> is software for ESP8266. It sync time with NTP server (declared in NTPClient.h) and poll one or several Google Home devices through unofficial API.
 
 Communication protocol is described in emo_nano.ino file.
 
