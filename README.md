@@ -1,7 +1,8 @@
 # Google Home Timer on Sunfounder Emo Screen
 Shows timers from any number of Google Home devices on <a href=https://www.amazon.com/dp/B0796PX3ZN>Sunfounder Emo</a> screen (24x8 LED matrix in pretty case with SPI controller). Acts as a clock in steady state. Uses unofficial <a href=https://rithvikvibhu.github.io/GHLocalApi/>Google Home local API</a>. Hardware components are ESP8266 and Arduino.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bby7mjBw0Bw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<img src=google.gif />
+<a href=https://www.youtube.com/embed/bby7mjBw0Bw>YouTube video</a>
 
 <h2>Hardware</h2>
 
