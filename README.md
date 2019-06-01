@@ -21,6 +21,7 @@ Communication protocol is described in emo_nano.ino file.
 <i>Implementation is possible with only one controller, for example, ESP-12. But in this case voltage should be around 4V that is high end of ESP8266. With 3.3V Sunfounder Emo work is not stable.</i>
 
 3. SunFounder 24x8 LED Dot Matrix Module - Emo.
+<img src=schematics.png />
 
 <i>Instead of Sunfounder Emo, any LED matrix or time display like TM1637 can be used. In that case controller code should be changed.</i>
 
